@@ -1,0 +1,107 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style type="text/css">
+    @import url("MemberRegisternew.css");
+    </style>
+<title>User Registration Form</title>
+    <!-- jQuery + Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<header> 
+<div class="container-fluid" id="wrapper">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
+	  <a class="navbar-brand" href="index.html" style="max-width: 30%;">
+   <a href="index.html">  <img src="img/Logo1.png" class="img-fluid" alt="logo"></a>														
+ 		</a>
+    
+<a href="index.html"><button align type="button" class="btn btn-outline-danger">Home</button></a> &nbsp
+	  	<a href="loginselection.html"><button class="btn btn-outline-danger">Login&nbsp;</button></a>&nbsp
+		<a href="RegistrationSelection.html"><button class="btn btn-outline-danger">Register&nbsp;</button></a>&nbsp
+	      <a href="Aboutus.html"><button class="btn btn-outline-danger">About us&nbsp;</button></a>&nbsp
+		<a href="ContactPage.html"><button class="btn btn-outline-danger">Contact&nbsp;</button></a>&nbsp
+		<a href="Legal.html"><button class="btn btn-outline-danger">Legal&nbsp;</button></a>&nbsp
+	 
+	  <input type="text" placeholder="Search...">
+	
+  </nav>
+</div>
+	</header>
+<section> 
+    
+	<div class="container mt-5" style="max-width: 500px">
+        <form action="RafflerRegisterForm.php" method="post">
+            <h3 class="text-center mb-5">Seller Registration Form</h3>
+			
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" class="form-control" name="username" required />
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" name="password" required />
+				
+            </div>
+			
+			<div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" class="form-control" name="confirmpassword" required />
+            </div>
+
+            <div class="form-group">
+                <label>Type of Seller</label>
+					<select name ="typeseller" id ="typeseller" class ="form-control" required >
+						<option value ="Individual">Individual</option> 
+						<option value ="Charity">Charity</option> 
+						<option value ="Business">Business</option> 
+					</select>
+            </div>
+			
+			<div class="form-group">
+                <label>Seller Name/Organisation</label>
+                <input type="text" class="form-control" name="sellername" required />
+            </div>
+			
+            <div class="form-group">
+				<label>Regulation Number</label>
+                <input type="text" class="form-control" name="regnumber"  />
+            </div>
+			
+		    <div class="form-group">
+				<label>Email</label>
+                <input type="email" class="form-control" name="email" required />
+            </div>
+			
+			<div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" class="form-control" name="phonenumber" required />
+            </div>
+
+			<div class="form-group">
+                <label>Address</label>
+                <input type="text" class="form-control" name="address" required />
+            </div>
+			
+			<div class="form-group">
+                <label>PostCode</label>
+                <input type="text" class="form-control" name="postcode" required  />
+            </div>
+			
+            <button type="submit" name="submit" class="btn btn-primary btn-block">submit</button>
+        </form>
+    </div>
+	</section>
+	
+
+</body>
+
+</html>
